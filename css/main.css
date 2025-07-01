@@ -1,0 +1,41 @@
+
+/* config-global*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}   
+
+/* topo */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: #F9F7F3;
+}
+
+.div-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60px;
+}
+
+.titulo-header {
+    font-size: 44px;
+    color: #333;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    color: #4A6D7C;
+}
+
+.azul {
+    color: #0074D9;
+}
