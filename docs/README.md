@@ -99,3 +99,50 @@ Para facilitar seu trabalho, você pode obter o conteúdo da seguinte forma:
 * **Seus Livros:** Escolha alguns livros que você realmente goste e que se encaixem nas categorias "Lidos", "Lendo Agora" e "Lista de Desejos". Pense em 5 a 10 livros para cada seção para começar.
 
 ---
+## Estrutura de Pastas (Padrão de Organização)
+
+Nossa estrutura de pastas segue uma abordagem limpa e funcional, sem enumeração numérica, priorizando nomes descritivos em `camelCase` (para JavaScript) e `kebab-case` (para HTML/CSS, quando aplicável) para maior clareza e manutenibilidade.
+
+# Convenções de Nomenclatura
+
+Para manter o código limpo, consistente e fácil de entender, este projeto segue convenções de nomenclatura específicas para diferentes tipos de arquivos e elementos.
+
+---
+
+## `kebab-case` para HTML, CSS e Nomes de Arquivos/Pastas Gerais
+
+O **`kebab-case`** (`exemplo-de-nome`) é utilizado para:
+
+* **Nomes de Pastas:** Todas as pastas do projeto (exceto a raiz principal) utilizam `kebab-case`.
+    * Exemplo: `styles/`, `scripts/`, `assets/`, `docs/`
+* **Nomes de Arquivos HTML e CSS:** Arquivos HTML (quando houver mais de um) e todos os arquivos CSS.
+    * Exemplo: `index.html` (padrão, não se aplica o `-`), `main-styles.css`, `header-component.css`
+* **Nomes de Arquivos de Mídia (Imagens, Ícones, etc.):** Para clareza e compatibilidade em URLs.
+    * Exemplo: `book-cover-image.jpg`, `app-icon.png`
+* **Classes e IDs no CSS e HTML:** Essencial para a padronização do CSS.
+    * Exemplo: `.book-card-container`, `#main-header`, `id="reading-list-section"`
+* **Atributos `data-*` no HTML:**
+    * Exemplo: `data-book-id="123"`, `data-category="fiction"`
+
+**Motivação:** O `kebab-case` é amplamente reconhecido e preferido para a web por ser amigável para URLs, legível e por evitar problemas de sensibilidade a maiúsculas/minúsculas em diferentes sistemas de arquivos.
+
+---
+
+## `camelCase` para JavaScript
+
+O **`camelCase`** (`exemploDeNome`) é estritamente aplicado para todos os elementos dentro do JavaScript e para os nomes dos arquivos JavaScript.
+
+* **Nomes de Arquivos JavaScript:**
+    * Exemplo: `mainScript.js`, `bookFilterUtil.js`, `smoothScroll.js`
+* **Variáveis e Constantes:**
+    * Exemplo: `const bookTitle = "O Pequeno Príncipe";`, `let currentPage = 1;`
+* **Funções:**
+    * Exemplo: `function filterBooksByGenre() { ... }`, `function updateReadingStatus() { ... }`
+* **Classes (se aplicável):**
+    * Exemplo: `class BookCard { ... }`
+
+**Motivação:** O `camelCase` é a convenção padrão da comunidade JavaScript, o que torna o código mais familiar e colaborativo para outros desenvolvedores, além de ser otimizado para a sintaxe da linguagem.
+
+---
+
+Ao seguir essas convenções, garantimos um código coeso e de alta qualidade em todo o projeto.
